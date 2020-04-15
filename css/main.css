@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: Public Sans;
+}
+/* .section1 {
+  background-color: hsl(0, 0%, 98%);
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+} */
+.section2 {
+  background-color: hsl(220, 16%, 96%);
+  padding: 0px 0px 100px 0px;
+}
+.section3 {
+  background-color: hsl(0, 0%, 98%);
+  padding: 0px 0px 100px 0px;
+}
+@media only screen and (min-width: 300px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+  }
+  .nav-list {
+    display: none;
+  }
+  img {
+    /* background-color: hsl(220, 16%, 96%); 
+    its creating an unnecessary line between itself
+    and section2. What to do?*/
+    margin-top: 2%;
+    width: 100%;
+  }
+  /***Section1**/
+  .section1 .section-img {
+    display: none;
+  }
+  .section1 .section-content {
+    padding: 5% 4% 20% 4%;
+    text-align: center;
+  }
+  .section1 .section-content h1 {
+    font-size: 30px;
+    line-height: 1.2em;
+    color: hsl(233, 26%, 24%);
+  }
+  .section1 .section-content p {
+    color: hsl(233, 8%, 62%);
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-top: 7%;
+  }
+  .section1 .section-content button {
+    margin-top: 8%;
+    font-size: 16px;
+  }
+  .section1 .section-content .cta {
+    border-radius: 50px;
+    padding: 15px 35px;
+    border: transparent;
+    background: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    );
+    color: hsl(0, 0%, 100%);
+    text-transform: capitalize;
+  }
+  .pb {
+    padding-bottom: 10%;
+  }
+  .mb {
+    margin-bottom: 5%;
+  }
+  .caps {
+    text-transform: capitalize;
+  }
+  /**Section2**/
+  .section2 {
+    padding: 20% 4% 20% 4%;
+    text-align: center;
+  }
+  .section2 .section-content h1 {
+    font-size: 30px;
+    line-height: 1.2em;
+    color: hsl(233, 26%, 24%);
+    padding-bottom: 0;
+  }
+  .section2 .section-content p {
+    color: hsl(233, 8%, 62%);
+    font-size: 16px;
+    line-height: 1.6em;
+    padding-top: 6%;
+  }
+  .section2 .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+  }
+  .section2 .options h3 {
+    color: hsl(233, 26%, 24%);
+    text-transform: capitalize;
+    padding-top: 10%;
+    font-size: 22px;
+  }
+  .section2 .options p {
+    color: hsl(233, 8%, 62%);
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-top: 6%;
+  }
+  .section2 .options img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+  }
+  .options .option1,
+  .options .option2,
+  .options .option3,
+  .options .option4 {
+    padding-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /**Section3**/
+  .section3 {
+    padding: 20% 4% 20% 4%;
+    text-align: center;
+  }
+  .section3 .section-content h1 {
+    font-size: 30px;
+    line-height: 1.2em;
+    color: hsl(233, 26%, 24%);
+    padding-bottom: 30px;
+  }
+  .section3 .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 15px 0px 15px;
+  }
+  .section3 img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: block;
+  }
+  .section3 .options .text-content {
+    background-color: hsl(0, 0%, 100%);
+    height: auto;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 50px 20px;
+    text-align: justify;
+    display: block;
+  }
+  .section3 .options .text-content h4 {
+    color: hsl(233, 8%, 62%);
+    font-size: 19px;
+    text-transform: capitalize;
+  }
+  .section3 .options .text-content h2 {
+    color: hsl(233, 26%, 24%);
+    font-size: 26px;
+    padding-top: 10%;
+    text-align: center;
+  }
+  .section3 .options .text-content p {
+    font-size: 16px;
+    color: hsl(233, 26%, 24%);
+    padding-top: 15%;
+    line-height: 1.4em;
+  }
+  #footer {
+    padding: 20% 4% 20% 4%;
+    text-align: center;
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer .first .logo img {
+    color: hsl(0, 0%, 100%);
+  }
+  #footer .first .links {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  #footer .first .links a {
+    padding: 10px;
+  }
+  #footer .first .links a img {
+    width: 25px;
+    height: 25px;
+  }
+  #footer ul li {
+    list-style: none;
+    padding-top: 15px;
+    display: flex;
+    /* align-items: center; */
+  }
+  #footer .copyright button {
+    margin-top: 8%;
+    font-size: 16px;
+  }
+  #footer .copyright .cta {
+    border-radius: 50px;
+    padding: 15px 35px;
+    border: transparent;
+    background: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    );
+    color: hsl(0, 0%, 100%);
+    text-transform: capitalize;
+  }
+  #footer ul li a {
+    color: hsl(233, 8%, 62%);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 17px;
+    text-align: center;
+  }
+  #footer .second {
+    margin-right: 32px;
+  }
+  #footer p {
+    color: hsl(233, 8%, 62%);
+  }
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
