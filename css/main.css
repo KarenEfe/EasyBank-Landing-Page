@@ -20,6 +20,10 @@
   background-color: hsl(0, 0%, 98%);
   padding: 0px 0px 100px 0px;
 }
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 @media only screen and (min-width: 300px) {
   nav {
     display: flex;
@@ -32,6 +36,40 @@
   .nav-list {
     display: none;
   }
+
+  nav .hamburger-btn {
+    cursor: pointer;
+  }
+  .mobile-navbar-view {
+    min-height: 100%;
+    display: none;
+    min-width: 100vw;
+    height: 100%;
+    padding: 25px;
+    background: linear-gradient(0deg, rgba(18, 20, 32, 0.5), rgba(18, 20, 32, 0.5));
+    position: absolute;
+    top: 59px;
+  }
+  .mobile-navbar-view .content {
+    min-height: 35vh;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-navbar-view .content ul {
+    list-style-type: none;
+  }
+  .mobile-navbar-view .content ul li {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .mobile-navbar-view .content ul li:last-child {
+    margin-bottom: 0px;
+  }
+
+
   img {
     /* background-color: hsl(220, 16%, 96%); 
     its creating an unnecessary line between itself
