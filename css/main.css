@@ -51,6 +51,7 @@
       rgba(18, 20, 32, 0.5),
       rgba(18, 20, 32, 0.5)
     );
+    background: linear-gradient(0deg, rgba(18, 20, 32, 0.5), rgba(18, 20, 32, 0.5));
     position: absolute;
     top: 59px;
   }
@@ -72,7 +73,6 @@
   .mobile-navbar-view .content ul li:last-child {
     margin-bottom: 0px;
   }
-
   img {
     /* background-color: hsl(220, 16%, 96%); 
     its creating an unnecessary line between itself
