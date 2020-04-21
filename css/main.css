@@ -267,7 +267,7 @@
     height: 27px;
   }
   #footer ul li {
-    list-style: none;
+    list-style-type: none;
     padding-top: 20px;
     text-align: center;
   }
@@ -488,7 +488,7 @@
   height: 30px;
 }
 #footer ul li {
-  list-style: none;
+  list-style-type: none;
   padding-top: 25px;
   text-align: center;
 }
