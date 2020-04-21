@@ -664,7 +664,7 @@
 }
 @media only screen and (min-width: 1200px) {
   nav {
-    background-color: hsl(220, 16%, 96%);
+    background-color: hsl(0, 0%, 100%);
     display: flex;
     justify-content: space-around;
     padding: 35px 0;
@@ -676,19 +676,42 @@
   .show {
     display: block;
   }
+  .none {
+    display: none;
+  }
   .section1 {
     height: auto;
     display: flex;
     justify-content: space-around;
+    padding-top: 2em;
+    height: 100vh;
+  }
+  .section1 .section-content {
+    padding: 5em 0 0 3em;
   }
   .section1 .section-content p {
-    width: 70%;
+    width: 85%;
   }
-  .relFirst {
+  .section1 .only {
+    display: block;
+    position: relative;
+    z-index: 2;
+    right: -50px;
+    bottom: 575px;
+  }
+  .section-img {
+    position: relative;
+  }
+  .section-img img {
+    display: block;
+  }
+  /* .relFirst {
     position: relative;
     bottom: 50px;
     left: 50px;
-  }
+  } */
+
+  /**Section2**/
   .section2 .section-content h1 {
     font-size: 40px;
     line-height: 1.2em;
