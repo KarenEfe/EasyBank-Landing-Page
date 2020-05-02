@@ -3,40 +3,341 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
+  font-weight:400;
   font-family: "Public Sans", sans-serif;
 }
-.section1 {
-  background-color: hsl(0, 0%, 98%);
-  padding-top: 5%;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-}
-.section2 {
-  background-color: hsl(220, 16%, 96%);
-  padding: 0px 0px 100px 0px;
-}
-.section3 {
-  background-color: hsl(0, 0%, 98%);
-  padding: 0px 0px 100px 0px;
-}
+/**Mobile NavBar**/
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
 }
-@media only screen and (min-width: 300px) {
+/**Reusable Styles**/
+p{
+  font-size:14px;
+  color: hsl(233, 8%, 62%);
+  width: 100%;
+}
+.pt{
+  padding-top:1.5rem;
+}
+.ml{
+  margin-left:3rem;
+}
+.mr{
+  margin-right: 3rem;
+}
+.pb {
+  padding-bottom: 10%;
+}
+.mb {
+  margin-bottom: 5%;
+}
+.mt{
+  margin-top: 1.5rem;
+}
+.caps {
+  text-transform: capitalize;
+}
+.mobile-background{
+  display: none;
+}
+/* .none{
+  display: none;
+} */
+/*Nav Styles on Desktop**/
+nav{
+  background-color: RGB(255, 255, 255);
+  padding:2rem 3rem;
+  height: auto;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  position: relative;
+  z-index:3;
+}
+.nav-list{
+  list-style: none;
+}
+.nav-list li{
+  display: inline-block;
+  padding:1rem;
+  text-transform: capitalize;
+}
+.nav-list li a{
+  text-decoration: none;
+ font-size:14px;
+ color:hsl(233, 8%, 62%)
+} 
+.nav-list li:hover{
+  border-bottom: 2px solid hsl(136, 65%, 51%);
+}
+.hamburger-btn{
+  display:none;
+}
+.cta{
+   display:block;
+    border-radius: 50px;
+    padding: 15px 20px;
+    border: transparent;
+    background: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    );
+    font-size:13px;
+    color: hsl(0, 0%, 100%);
+    text-transform: capitalize;
+  }
+/*Section1 styles on Desktop**/
+.section1 {
+  background-color: RGB(250, 250, 250);
+  padding-bottom: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.section1 .section-content {
+ padding:10% 5%;
+}
+.section1 h1{
+  font-size:40px;
+  color: hsl(233, 26%, 24%);
+}
+.section1 .section-content p {
+  width: 80%;
+  color: hsl(233, 8%, 62%);
+  line-height:1.4rem;
+}
+.section1 .section-img img{
+  width: 50%;
+  height: auto;
+  display: block;
+}
+.section1 img.rel{
+  position: absolute;
+  bottom: 7rem;
+  right: 0;
+}
+.section1 img.only {
+  display: block;
+  width: 750px;
+  height: 800px;
+  position: relative;
+  z-index: 2;
+  right:0;
+  bottom: 2rem;
+}
+/*section2 styles on Desktop  */
+.section2 {
+  background-color: RGB(244, 245, 247);
+  height:auto;
+  padding:10% 5%;
+}
+.section2 .section-content h1 {
+  font-size:40px;
+  color: hsl(233, 26%, 24%);
+}
+.section2 .section-content p {
+  width: 100%;
+  line-height: 1.5em;
+}
+.section2 .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: justify;
+  padding-top: 3%;
+}
+.option{
+  padding-bottom: 0;
+  text-align: justify;
+  display: flex;
+  margin:1rem;
+  justify-content:space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.option h3{
+font-size:21px;
+color:hsl(233, 26%, 24%);
+}
+.option p{
+  width: 100%;
+  line-height: 1.6em;
+}
+.option img {
+  width: 60px;
+  height: 60px;
+}
+/**Section3 Desktop Styles**/
+.section3 {
+  background-color: RGB(250, 250, 250);
+  height:auto;
+  padding:10% 5%;
+}
+.section3 .section-content h1 {
+  font-size:40px;
+  color: hsl(233, 26%, 24%);
+}
+.section3 .options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  padding-top: 3%;
+}
+.section3 .option{
+  margin:1rem;
+}
+.section3 .options img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: block;
+}
+.section3 .options .option .text-content {
+  background-color: hsl(0, 0%, 100%);
+  height: 75%;
+  width: 100%;
+  max-width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 3rem 1.5rem;
+  text-align: justify;
+}
+.section3 .options .text-content h4 {
+  color: hsl(233, 8%, 62%);
+  font-size:17px;
+  text-transform: capitalize;
+}
+.section3 .options .text-content h2 {
+  color: hsl(233, 26%, 24%);
+  font-size: 19px;
+  letter-spacing: normal;
+  padding-top: 5%;
+}
+.section3 .options .text-content p {
+  color: hsl(233, 8%, 62%);
+  padding-top: 6%;
+  line-height: 1.5em;
+}
+/**Footer Desktop Styles**/
+#footer {
+  padding: 5% 3% 5% 3%;
+  text-align: center;
+  background-color: hsl(236, 27%, 29%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer .first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .first .links {
+  padding: 2rem 0;
+}
+#footer .first .links a{
+  padding: 0 .5rem;
+}
+#footer li{
+  list-style: none;
+  padding:.5rem 0;
+}
+#footer .first .logo img {
+  width: 200px;
+  height: auto;
+}
+#footer .first .links a img {
+  width: 25px;
+  height: 25px;
+}
+#footer ul li a {
+  color: hsl(233, 8%, 62%);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+#footer .copyright {
+  margin-left: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .copyright p{
+  padding-top: 2rem;
+}
+@media only screen and (max-width:1100px){
+  .section1 .section-img{
+    display: none;
+  }
+  .mobile-background{
+    display: block;
+    background-color: RGB(250, 250, 250);
+    height: 200vh;
+  }
+  .mobile-background img{
+    width: 100%;
+  }
+  .mobile-background img.rel{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    bottom: 80rem;
+  }
+  .section1 .section-content{
+    position: relative;
+    top: 2rem;
+    padding:5rem;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+  .section1 .section-content h1{
+    font-size:48px;
+  }
+  .section1 .section-content p{
+    font-size:25px;
+    line-height: 1.5em;
+    padding-top:20px;
+    width: 100%;
+  }
+  .section1 .section-content button{
+    margin:0 auto;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .section2 {
+    text-align: center;
+  }
+  .section2 .section-content{
+    text-align: justify;
+    margin-left: 60px;
+  }
+  .section2 .section-content h1{
+  font-size:50px;
+  }
+}
+ @media only screen and (max-width:768px) {
   nav {
     display: flex;
     justify-content: space-between;
-    padding: 5%;
   }
-  nav button {
-    display: none;
+  nav .cta, ul.nav-list{
+    display:none;
   }
-  .nav-list {
-    display: none;
+  .hamburger-btn{
+    display: block;
   }
-
   nav .hamburger-btn {
     cursor: pointer;
   }
@@ -72,764 +373,109 @@
   .mobile-navbar-view .content ul li:last-child {
     margin-bottom: 0px;
   }
-
   img {
-    /* background-color: hsl(220, 16%, 96%); 
-    its creating an unnecessary line between itself
-    and section2. What to do?*/
     margin-top: 2%;
     width: 100%;
   }
-  /***Section1**/
-  .section1 .section-img {
-    display: none;
-  }
-  .section1 .section-content {
-    padding: 5% 4% 20% 4%;
-    text-align: center;
-  }
   .section1 .section-content h1 {
-    font-size: 30px;
-    line-height: 1.2em;
-    color: hsl(233, 26%, 24%);
-  }
+    font-size: 38px;
+}
   .section1 .section-content p {
-    color: hsl(233, 8%, 62%);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5em;
-    padding-top: 7%;
-  }
+    padding-top: 1.5rem;
+    width: 100%;
+}
   .section1 .section-content button {
-    margin-top: 8%;
-    font-size: 16px;
-  }
-  .section1 .section-content .cta {
-    border-radius: 50px;
-    padding: 15px 35px;
-    border: transparent;
-    background: linear-gradient(
-      to right,
-      hsl(136, 65%, 51%),
-      hsl(192, 70%, 51%)
-    );
-    color: hsl(0, 0%, 100%);
-    text-transform: capitalize;
-  }
-  .pb {
-    padding-bottom: 10%;
-  }
-  .mb {
-    margin-bottom: 5%;
-  }
-  .caps {
-    text-transform: capitalize;
-  }
-  /**Section2**/
-  .section2 {
-    padding: 20% 4% 20% 4%;
-    text-align: center;
-  }
-  .section2 .section-content h1 {
-    font-size: 30px;
-    line-height: 1.2em;
-    color: hsl(233, 26%, 24%);
-    padding-bottom: 0;
-  }
-  .section2 .section-content p {
-    color: hsl(233, 8%, 62%);
-    font-size: 16px;
-    line-height: 1.6em;
-    padding-top: 6%;
-  }
-  .section2 .options {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding-top: 20%;
-  }
-  .options .option1,
-  .options .option2,
-  .options .option3,
-  .options .option4 {
-    padding-bottom: 0;
-    margin-left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .section2 .options h3 {
-    color: hsl(233, 26%, 24%);
-    text-transform: capitalize;
-    padding-top: 10%;
-    font-size: 22px;
-  }
-  .section2 .options p {
-    color: hsl(233, 8%, 62%);
-    font-size: 16px;
-    line-height: 1.5em;
-    padding-top: 6%;
-  }
-  .section2 .options img {
-    width: 60px;
-    height: 60px;
-    display: flex;
-  }
-  .options .option1,
-  .options .option2,
-  .options .option3,
-  .options .option4 {
-    padding-bottom: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  /**Section3**/
-  .section3 {
-    padding: 20% 4% 20% 4%;
-    text-align: center;
-  }
-  .section3 .section-content h1 {
-    font-size: 30px;
-    line-height: 1.2em;
-    color: hsl(233, 26%, 24%);
-    padding-bottom: 30px;
-  }
-  .section3 .options {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px 15px 30px 15px;
-  }
-  .section3 img {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    display: block;
-  }
-  .section3 .options .text-content {
-    background-color: hsl(0, 0%, 100%);
-    height: auto;
-    width: 100%;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 50px 20px;
-    text-align: center;
-    display: block;
-  }
-  .section3 .options .text-content h4 {
-    color: hsl(233, 8%, 62%);
-    font-size: 19px;
-    text-transform: capitalize;
-  }
-  .section3 .options .text-content h2 {
-    color: hsl(233, 26%, 24%);
-    font-size: 26px;
-    padding-top: 5%;
-    text-align: center;
-  }
-  .section3 .options .text-content p {
-    font-size: 16px;
-    color: hsl(233, 26%, 24%);
-    padding-top: 7%;
-    line-height: 1.4em;
-  }
-  #footer {
-    padding: 20% 4% 20% 4%;
-    text-align: center;
-    background-color: hsl(236, 27%, 29%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #footer .first {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #footer .first .logo img {
-    color: hsl(0, 0%, 100%);
-  }
-  #footer .first .links {
-    padding: 20px 0;
-  }
-  #footer .first .links a {
-    padding: 12px;
-  }
-  #footer .first .links a img {
-    width: 27px;
-    height: 27px;
-  }
-  #footer ul li {
-    list-style-type: none;
-    padding-top: 20px;
-    text-align: center;
-  }
-  #footer ul li a {
-    color: hsl(233, 8%, 62%);
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 17px;
-    font-weight: 600;
-    text-align: center;
-  }
-  #footer .copyright {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #footer .copyright button {
-    margin-top: 10%;
-    font-size: 16px;
-  }
-  #footer .copyright .cta {
-    border-radius: 50px;
-    padding: 15px 35px;
-    border: transparent;
-    background: linear-gradient(
-      to right,
-      hsl(136, 65%, 51%),
-      hsl(192, 70%, 51%)
-    );
-    color: hsl(0, 0%, 100%);
-    text-transform: capitalize;
-  }
-  #footer p {
-    color: hsl(233, 8%, 62%);
-    padding-top: 10%;
-  }
+    margin: 0 auto;
+    margin-top: 1.5rem;
 }
-@media only screen and (min-width: 576px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  nav button {
-    display: none;
-  }
-  .section2 {
-    padding: 20% 4% 20% 4%;
-    text-align: center;
-  }
-  .section2 .section-content h1 {
-    font-size: 30px;
-    line-height: 1.2em;
-    color: hsl(233, 26%, 24%);
-    padding-bottom: 0;
-  }
-  .section2 .section-content p {
-    color: hsl(233, 8%, 62%);
-    font-size: 16px;
-    line-height: 1.6em;
-    padding-top: 6%;
-  }
-  .section2 .options {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding-top: 10%;
-  }
-  .section2 .options h3 {
-    color: hsl(233, 26%, 24%);
-    text-transform: capitalize;
-    padding-top: 10%;
-    font-size: 22px;
-  }
-  .section2 .options p {
-    color: hsl(233, 8%, 62%);
-    font-size: 16px;
-    line-height: 1.5em;
-    padding-top: 6%;
-  }
-  .section2 .options img {
-    width: 60px;
-    height: 60px;
-    display: flex;
-  }
-  .options .option1,
-  .options .option2,
-  .options .option3,
-  .options .option4 {
-    padding-bottom: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media only screen and (min-width: 768px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 40px;
-  }
-  nav .nav-list {
-    display: block;
-  }
-  nav .nav-list li {
-    display: inline-block;
-    padding-left: 20px;
-  }
-  nav .nav-list li a {
-    text-decoration: none;
-    font-size: 17px;
-    text-transform: capitalize;
-    color: hsl(233, 8%, 62%);
-  }
-  nav .hamburger-btn,
-  nav button {
-    display: none;
-  }
-  img {
-    width: 100%;
-    height: auto;
-    padding-bottom: none;
-  }
-  .section1 .section-content {
-    padding: 0px 5px 40px 5px;
-    text-align: center;
-  }
-  .section1 .section-content h1 {
-    font-size: 35px;
-    line-height: 1.5em;
-    color: hsl(233, 26%, 24%);
-  }
-  .section1 .section-content p {
-    color: hsl(233, 8%, 62%);
-    font-size: 20px;
-    line-height: 1.5em;
-    padding-top: 4%;
-  }
-  .section1 .section-content button {
-    margin-top: 5%;
-    font-size: 16px;
-  }
-  .section2 {
-    padding: 10% 5% 10% 5%;
-    text-align: center;
-  }
-  .section2 .section-content,
-  .section3 .section-content {
-    text-align: justify;
-    margin-left: 60px;
-  }
-}
-.section2 .options {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding-top: 10%;
-}
-.options .option1,
-.options .option2,
-.options .option3,
-.options .option4 {
-  padding-bottom: 0;
-  /* margin-left: 35px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.section3 {
-  padding: 10% 5% 10% 5%;
-  text-align: center;
-}
-.section3 .options .text-content {
-  background-color: hsl(0, 0%, 100%);
-  height: auto;
-  width: 100%;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  padding: 50px 30px;
-  text-align: justify;
-  display: block;
-}
-.section3 .options .text-content h2 {
-  color: hsl(233, 26%, 24%);
-  font-size: 26px;
-  padding-top: 3%;
-  text-align: justify;
-}
-.section3 .options .text-content p {
-  font-size: 18px;
-  color: hsl(233, 26%, 24%);
-  padding-top: 3%;
-  line-height: 1.5em;
-}
-#footer {
-  padding: 10% 5% 10% 5%;
-  text-align: center;
-  background-color: hsl(236, 27%, 29%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-#footer .first {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-#footer .first .links a img {
-  width: 30px;
-  height: 30px;
-}
-#footer ul li {
-  list-style-type: none;
-  padding-top: 25px;
-  text-align: center;
-}
-#footer ul li a {
-  color: hsl(233, 8%, 62%);
-  text-decoration: none;
-  text-transform: capitalize;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-}
-#footer .copyright button {
-  margin-top: 15%;
-  font-size: 18px;
-}
-@media only screen and (min-width: 992px) {
-  nav {
-    background-color: hsl(220, 16%, 96%);
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 40px;
-  }
-  button {
-    display: block;
-  }
-  nav .nav-list li {
-    display: inline-block;
-    padding-left: 20px;
-  }
-  nav .nav-list li a {
-    text-decoration: none;
-    font-size: 17px;
-    text-transform: capitalize;
-    color: hsl(233, 8%, 62%);
-  }
-  .none {
-    display: none;
-  }
-  .section1 {
-    padding: 5% 4%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .section1 .section-img {
-    display: block;
-  }
-  .section1 .section-content {
-    text-align: justify;
-    padding-bottom: 0;
-  }
-  .section1 .section-content p {
-    color: hsl(233, 8%, 62%);
-    font-size: 18px;
-    line-height: 1.5em;
-    padding-top: 4%;
-  }
-  nav button {
-    font-size: 15px;
-  }
-  nav .cta {
-    border-radius: 50px;
-    padding: 15px 35px;
-    border: transparent;
-    background: linear-gradient(
-      to right,
-      hsl(136, 65%, 51%),
-      hsl(192, 70%, 51%)
-    );
-    color: hsl(0, 0%, 100%);
-    text-transform: capitalize;
-  }
-  .section2 .section-content p {
-    color: hsl(233, 8%, 62%);
-    font-size: 16px;
-    line-height: 1.6em;
-    padding-top: 4%;
-    font-size: 18px;
-  }
-  .section2 .options p {
-    color: hsl(233, 8%, 62%);
-    font-size: 18px;
-    line-height: 1.5em;
-    padding-top: 6%;
-  }
-  .section2 .options {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding-top: 8%;
-  }
-  .section3 {
-    padding: 10% 5% 10% 5%;
-    text-align: center;
-  }
-  .section3 .options {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0px 5px 0px 5px;
-  }
-  .section3 .options .text-content {
-    background-color: hsl(0, 0%, 100%);
-    height: 75%;
-    width: 100%;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 30px 10px;
-    text-align: justify;
-    display: block;
-  }
-  .section3 .options .text-content h4 {
-    color: hsl(233, 8%, 62%);
-    font-size: 18px;
-    text-transform: capitalize;
-  }
-  .section3 .options .text-content h2 {
-    color: hsl(233, 26%, 24%);
-    font-size: 23px;
-    padding-top: 8%;
-    text-align: justify;
-  }
-  .section3 .options .text-content p {
-    font-size: 16px;
-    color: hsl(233, 26%, 24%);
-    padding-top: 10%;
-    line-height: 1.5em;
-  }
-  #footer {
-    padding: 10% 5% 10% 5%;
-    text-align: center;
-    background-color: hsl(236, 27%, 29%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #footer .first {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-  }
-  #footer .first .logo img {
-    width: 200px;
-    height: auto;
-  }
-  #footer .first .links a img {
-    width: 25px;
-    height: 25px;
-  }
-  #footer .second ul,
-  #footer .third ul {
-    margin-left: 30px;
-  }
-  #footer ul li a {
-    color: hsl(233, 8%, 62%);
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 17px;
-    font-weight: 600;
-    text-align: center;
-  }
-  #footer .copyright {
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  nav {
-    background-color: hsl(0, 0%, 100%);
-    display: flex;
-    justify-content: space-around;
-    padding: 35px 0;
-  }
-  nav .nav-list {
-    margin-top: 10px;
-    display: block;
-  }
-  .show {
-    display: block;
-  }
-  .none {
-    display: none;
-  }
-  .section1 {
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2em;
-    height: 100vh;
-  }
-  .section1 .section-content {
-    padding: 5em 0 0 3em;
-  }
-  .section1 .section-content p {
-    width: 85%;
-  }
-  .section1 .only {
-    display: block;
-    position: relative;
-    z-index: 2;
-    right: -50px;
-    bottom: 575px;
-  }
-  .section-img {
-    position: relative;
-  }
-  .section-img img {
-    display: block;
-  }
-  /* .relFirst {
-    position: relative;
-    bottom: 50px;
-    left: 50px;
-  } */
+.section1 img.rel{
+  position: absolute;
+  top: 10rem;
+  right: 0;
 
-  /**Section2**/
-  .section2 .section-content h1 {
-    font-size: 40px;
-    line-height: 1.2em;
-    color: hsl(233, 26%, 24%);
-    padding-bottom: 0;
-  }
-  .section2 .section-content p {
-    color: hsl(233, 8%, 62%);
-    font-size: 16px;
-    line-height: 1.5em;
-    padding-top: 3%;
-    font-size: 18px;
-  }
+} 
+.section1 img.only {
+  display:none;
+  display: block;
+  width: 750px;
+  height: 800px;
+  position: relative;
+  z-index: 2;
+  right:0;
+  bottom: 1rem;
+}
+.section2 .section-content{
+  text-align: justify;
+}
   .section2 .options {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding-top: 5%;
-    text-align: justify;
+    padding-top: 10%;
+    width: 100%;
   }
-  .section2 .options p {
-    color: hsl(233, 8%, 62%);
-    font-size: 16px;
-    line-height: 1.5em;
-    padding-top: 6%;
-  }
-  .options .option1,
-  .options .option2,
-  .options .option3,
-  .options .option4 {
-    padding-bottom: 0;
-    margin-left: 30px;
+  .section2 .option {
+    padding-bottom:2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
-  .section2 .options img {
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
+  .section2 .option p{
+    width: 100%;   
   }
-  .section3 img {
+  .mr{
+    margin-right: 0;
+  }
+  .section3 .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
     width: 100%;
-    height: 150px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    display: block;
   }
-  .section3 .options .text-content {
-    background-color: hsl(0, 0%, 100%);
-    height: 75%;
-    width: 100%;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 50px 15px;
-    text-align: justify;
-    display: block;
+  .section3 .option {
+    padding-bottom:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-  .section3 .options .text-content h4 {
-    color: hsl(233, 8%, 62%);
-    font-size: 16px;
-    text-transform: capitalize;
+  .section3 .option img{
+    max-width: 100%;
+    height: auto;
   }
-  .section3 .options .text-content h2 {
-    color: hsl(233, 26%, 24%);
-    font-weight: 400;
-    font-size: 21px;
-    padding-top: 7%;
-    text-align: justify;
+  .section3 h2{
+    font-size:32px;
   }
-  .section3 .options .text-content p {
-    font-size: 15px;
-    color: hsl(233, 26%, 24%);
-    padding-top: 9%;
-    line-height: 1.4em;
+  .section3 .option p{
+    font-size:17px;
+    line-height: 1.3em;
   }
   #footer {
     padding: 5% 3% 5% 3%;
     text-align: center;
     background-color: hsl(236, 27%, 29%);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #footer .first {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-  }
-  #footer .first .links {
-    padding: 20px 0;
-  }
-  #footer .first .logo img {
-    width: 200px;
-    height: auto;
-  }
-  #footer .first .links a img {
-    width: 25px;
-    height: 25px;
-  }
-  #footer ul li a {
-    color: hsl(233, 8%, 62%);
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 17px;
-    font-weight: 600;
-    text-align: center;
-  }
-  #footer .copyright {
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-  }
 }
+#footer .copyright {
+  margin-left:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  }
+} 
+

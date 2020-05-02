@@ -20,7 +20,7 @@
     />
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
     <!--Navigation Menu-->
@@ -48,7 +48,8 @@
         />
       </div>
     </nav>
-    <div class="mobile-navbar-view">
+    <!--Mobile navigation view-->
+    <!-- <div class="mobile-navbar-view">
       <div class="content">
         <ul list-style="none">
           <li>Home</li>
@@ -58,84 +59,86 @@
           <li>Careers</li>
         </ul>
       </div>
-    </div>
-    <img
+    </div> -->
+    <div class="mobile-background">
+      <img
       src="./images/bg-intro-mobile.svg"
-      class="none"
       alt="Mobile intro img"
     />
-    <!--Section1-->
-    <section class="section1">
+    <img src="./images/image-mockups.png" class="rel" alt="" />
+   </div>
+    <!--Section1  Markup-->
+    <section class="section1"> 
       <div class="section-content">
         <h1>Next generation<br />digital banking</h1>
-        <p>
+        <p class="pt">
           Take your financial life online. Your Easybank account will be a
           one-stop-shop for spending, saving, budgeting, investing and much
           more.
         </p>
-        <button class="cta">request invite</button>
+        <button class="cta mt">request invite</button>
       </div>
       <div class="section-img">
-        <img src="./images/bg-intro-desktop.svg" class="show" alt="" />
-        <img src="./images/image-mockups.png" class="only" alt="" />
+        <img src="./images/bg-intro-desktop.svg" class="rel none" alt="" />
+        <img src="./images/image-mockups.png" class="only none" alt="" />
       </div>
     </section>
-    <!--Section2-->
+    <!--Section2 Markup-->
     <section class="section2">
       <div class="section-content">
-        <h1 class="pt">Why choose Easybank?</h1>
-        <p>
+        <h1 >Why choose Easybank?</h1>
+        <p class="pt">
           We leverage Open Banking to to turn your bank account into your
           financial hub.<br />
           Control your finances like never before.
         </p>
       </div>
       <div class="options">
-        <div class="option1">
-          <img src="./images/icon-online.svg" alt="Online banking" />
-          <h3>online banking</h3>
-          <p>
+        <div class="option">
+          <img src="./images/icon-online.svg" class="mr" alt="Online banking" />
+          <h3 class="caps pt">online banking</h3>
+          <p class="pt">
             Our modern web and mobile<br />applications allow you to keep<br />track
             of your finances wherever you<br />are in the world.
           </p>
         </div>
-        <div class="option2">
-          <img src="./images/icon-budgeting.svg" alt="Budgeting" />
-          <h3>simple Budgeting</h3>
-          <p>
+        <div class="option">
+          <img src="./images/icon-budgeting.svg" class="mr" alt="Budgeting" />
+          <h3 class="caps pt">simple Budgeting</h3>
+          <p class="pt">
             See exactly where your money <br />
             goes each month. Receive <br />
             notifications when you are close to<br />
             hitting your limits.
           </p>
         </div>
-        <div class="option3">
-          <img src="./images/icon-onboarding.svg" alt="Onboarding" />
-          <h3>fast onboarding</h3>
-          <p>
+        <div class="option">
+          <img src="./images/icon-onboarding.svg" class="mr" alt="Onboarding" />
+          <h3 class="caps pt">fast onboarding</h3>
+          <p class="pt">
             We don't do branches. Open your<br />account in minutes online and
             start<br />taking control of your finances<br />right away.
           </p>
         </div>
-        <div class="option4">
-          <img src="./images/icon-api.svg" alt="API" />
-          <h3>open API</h3>
-          <p>
+        <div class="option">
+          <img src="./images/icon-api.svg" class="mr" alt="API" />
+          <h3 class="caps pt">open API</h3>
+          <p class="pt">
             Manage your savings, investments,<br />pension, and much more from
             one <br />
-            account.Tracking your money has<br />never been easier.
+            account. Tracking your money has<br />never been easier.
           </p>
         </div>
       </div>
     </section>
-    <!--Section3-->
+    <!--Section3 Markup-->
     <section class="section3">
       <div class="section-content">
         <h1 class="caps">latest articles</h1>
       </div>
       <div class="options">
         <!--Option1-->
-        <div class="option1">
+        <div class="option">
           <img src="./images/image-currency.jpg" alt="Currency" />
           <div class="text-content">
             <h4>by claire robinson</h4>
@@ -146,8 +149,8 @@
             </p>
           </div>
         </div>
-        <!--Option2-->
-        <div class="option2">
+         <!--Option2-->
+         <div class="option">
           <img src="./images/image-restaurant.jpg" alt="Restaurant" />
           <div class="text-content">
             <h4>by wilson hutton</h4>
@@ -160,8 +163,8 @@
             </p>
           </div>
         </div>
-        <!--Option 3-->
-        <div class="option3">
+         <!--Option 3-->
+         <div class="option">
           <img src="./images/image-plane.jpg" alt="Aeroplane" />
           <div class="text-content">
             <h4>by wilson hutton</h4>
@@ -172,8 +175,8 @@
             </p>
           </div>
         </div>
-        <!--Option 4-->
-        <div class="option4">
+         <!--Option 4-->
+         <div class="option">
           <img src="./images/image-confetti.jpg" alt="Currency" />
           <div class="text-content">
             <h4>by claire robinson</h4>
@@ -185,13 +188,13 @@
             </p>
           </div>
         </div>
-      </div>
+     </div>
     </section>
     <!--Footer-->
     <div id="footer">
       <div class="first">
         <div class="logo">
-          <img src="./images/logo.svg" alt="Easybank logo" />
+          <img src="./images/easybankWhite.svg" alt="Easybank logo" />
         </div>
         <div class="links">
           <a href="#"
@@ -226,6 +229,6 @@
         <p>EasyBank. All Rights Reserved.</p>
       </div>
     </div>
-    <script src="./js/view.js"></script>
+    <!-- <script src="./js/view.js"></script> -->
   </body>
 </html>
