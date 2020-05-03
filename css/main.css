@@ -564,3 +564,14 @@ nav {
     padding-top: 1.5rem;
   }
 }
+
+/* focus */
+*:focus {
+  outline: none;
+}
+
+button:focus {
+  border: 1px solid linear-gradient(to right,
+  hsl(136, 65%, 51%),
+  hsl(192, 70%, 51%));
+}
