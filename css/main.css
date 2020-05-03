@@ -388,10 +388,27 @@ nav {
   }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:760px) {
   nav {
     display: flex;
     justify-content: space-between;
+  }
+
+  .mobile-background {
+    display: block;
+    background-color: RGB(250, 250, 250);
+    height: 60vh;
+  }
+
+  .mobile-background img {
+    width: 100%;
+  }
+
+  .mobile-background img.rel {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    top: -78vh;
   }
 
   nav .cta,
@@ -443,7 +460,7 @@ nav {
   }
 
   img {
-    margin-top: 2%;
+    /* margin-top: 2%; */
     width: 100%;
   }
 
